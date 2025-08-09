@@ -1,0 +1,177 @@
+<!--Declares the document type and version of HTML.-->
+<!DOCTYPE html>
+<!--The 'lang="en"' attribute specifies that the content language is English-->
+<html lang="en">
+
+<head>
+  <!-- Character encoding for the document -->
+  <meta charset="UTF-8">
+  <!-- Viewport settings for responsive design on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title displayed in browser tab -->
+  <title>Share Your Commitment</title>
+  <!-- Bootstrap CSS for layout and styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons library for vector icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom CSS file for additional styling -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation bar at the top -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Brand/logo with icon and site name -->
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-globe2 fs-4 text-primary"></i>
+        <span>Digital Life</span>
+      </a>
+
+      <!-- Hamburger menu button for smaller screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible navigation links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center mb-2 mb-lg-0 d-flex flex-column flex-lg-row gap-lg-3">
+          <li class="nav-item">
+            <!-- Link to Home page -->
+            <a class="nav-link fw-semibold" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- Link to Info page -->
+            <a class="nav-link fw-semibold" href="info.html">Info</a>
+          </li>
+          <li class="nav-item">
+            <!-- Link to Form page -->
+            <a class="nav-link fw-semibold" href="form.html">Form</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main container section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Share Your Commitment to Digital Wellness!</h2>
+
+    <section class="my-5 d-flex justify-content-center">
+      <div class="w-100" style="max-width: 800px;">
+        <!-- Form submitting to Google Apps Script -->
+        <form action="https://script.google.com/macros/s/AKfycbzHogPcFX2naRmsWrA3FE46Gi-x9oR0zseN2bt-u8uggGumCyY1Vf-6M6g-70SGMa19/exec"
+          method="POST" target="_blank" class="needs-validation" novalidate>
+          
+          <div class="container border rounded p-4 shadow-sm bg-white">
+
+            <!-- Name input field -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+              <input type="text" id="name" name="name" class="form-control" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+
+            <!-- Email input field -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+              <input type="email" id="email" name="email" class="form-control" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+
+            <!-- Radio buttons for hours spent online -->
+            <div class="mb-3">
+              <label class="form-label d-block">How many hours per day do you spend online? <span class="text-danger">*</span></label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="hours" id="less2" value="Less than 2 hours" required>
+                <label class="form-check-label" for="less2">Less than 2 hours</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="hours" id="2to5" value="2 to 5 hours" required>
+                <label class="form-check-label" for="2to5">2 to 5 hours</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="hours" id="more5" value="More than 5 hours" required>
+                <label class="form-check-label" for="more5">More than 5 hours</label>
+                <div class="invalid-feedback">Please select how many hours you spend online.</div>
+              </div>
+            </div>
+
+            <!-- Checkboxes for habits -->
+            <div class="mb-3">
+              <label class="form-label">
+                Which of these habits do you practice?
+                <small>(Leave blank if none apply)</small>
+              </label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="habits" id="habit1" value="Enable 2FA">
+                <label class="form-check-label" for="habit1">Enable 2FA</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="habits" id="habit2" value="Limit screen time">
+                <label class="form-check-label" for="habit2">Limit screen time</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="habits" id="habit3" value="Avoid suspicious links">
+                <label class="form-check-label" for="habit3">Avoid suspicious links</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="habits" id="habit4" value="Use secure passwords">
+                <label class="form-check-label" for="habit4">Use secure passwords</label>
+              </div>
+            </div>
+
+            <!-- Dropdown for main platform -->
+            <div class="mb-3">
+              <label for="platform" class="form-label">Main platform you use <span class="text-danger">*</span></label>
+              <select class="form-select" id="platform" name="platform" required>
+                <option selected disabled value="">Please select your main platform</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Tiktok">Tiktok</option>
+                <option value="Other">Other</option>
+              </select>
+              <div class="invalid-feedback">Please select your main platform.</div>
+            </div>
+
+            <!-- Textarea for commitment message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Why are you committing to digital wellness? <span class="text-danger">*</span></label>
+              <textarea class="form-control" id="message" name="message" rows="3" placeholder="Please share your reason" required></textarea>
+              <small class="text-muted"><span id="charCount">0</span>/200 characters</small>
+              <div class="invalid-feedback">Please tell us why you are committing to digital wellness.</div>
+            </div>
+
+            <!-- Summary preview box -->
+            <div class="mb-4">
+              <h5>Summary Preview:</h5>
+              <div id="summaryBox" class="border p-3 bg-light text-wrap" style="max-width: 100%; word-break: break-word;">
+                Fill the form to see a preview here.
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+          </div>
+        </form>
+      </div>
+    </section>
+  </section>
+
+  <!-- Footer with copyright info -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 Digital Life. All rights reserved.
+  </footer>
+
+  <!-- Custom JavaScript file -->
+  <script src="js/script.js"></script>
+  <!-- Bootstrap JS bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!--This is done by Timothy-->
+
+<!--Declares the document type and version of HTML.-->
+<!DOCTYPE html>
+<!--The 'lang="en"' attribute specifies that the content language is English-->
+<html lang="en">
+<head>
+  <!-- Character encoding for the document -->
+  <meta charset="UTF-8">
+  <!-- Viewport settings for responsive design on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title displayed in browser tab -->
+  <title>Digital Wellness & Cyber Safety</title>
+  <!-- Bootstrap CSS for layout and styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons library for vector icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom CSS file for additional styling -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+  <!-- Navigation bar at the top -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Brand/logo with icon and site name -->
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-globe2 fs-4 text-primary"></i>
+        <span>Digital Life</span>
+      </a>
+
+      <!-- Hamburger menu button for smaller screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible navigation links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center mb-2 mb-lg-0 d-flex flex-column flex-lg-row gap-lg-3">
+          <li class="nav-item">
+            <!-- Link to Home page -->
+            <a class="nav-link fw-semibold" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- Link to Info page -->
+            <a class="nav-link fw-semibold" href="info.html">Info</a>
+          </li>
+          <li class="nav-item">
+            <!-- Link to Form page -->
+            <a class="nav-link fw-semibold" href="form.html">Form</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section with background image and main headline -->
+  <section class="hero">
+    <div class="container">
+      <h1>Protect Your Digital Life: Practice Digital Wellness & Cyber Safety</h1>
+      <p>Take charge of your screen time, secure your data, and live better online.</p>
+    </div>
+  </section>
+
+  <!-- Why It Matters section with explanatory text -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center section-heading mb-4">Why It Matters</h2>
+      <p class="lead text-center">
+        In today’s connected world, we spend more time online than ever before — chatting, studying, scrolling, and
+        streaming.
+        But are we doing it safely? Are we mentally healthy? This site will help you explore smart, balanced, and secure
+        ways to live online.
+        <br><br>
+        Digital wellness is not about completely avoiding technology, but about making intentional choices to use it in
+        ways that support rather than disrupt our lives.
+        Cyber safety ensures our personal data and privacy are protected as we navigate the internet, social media, and
+        digital platforms.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Focus Areas section with a carousel showcasing main topics -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center section-heading mb-5">Key Focus Areas</h2>
+
+      <!-- Outer blue box wrapping the carousel -->
+      <div class="icon-carousel-wrapper text-dark rounded-4 p-4 p-lg-5" style="background-color: lightblue;">
+
+        <!-- Bootstrap carousel component -->
+        <div id="focusCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="12000">
+          <div class="carousel-inner">
+
+            <!-- Slide 1: Digital Wellness -->
+            <div class="carousel-item active">
+              <div class="icon-carousel-box bg-white text-dark rounded-3 shadow-sm p-4 p-lg-5 text-center">
+                <div class="icon-box">
+                  <!-- Icon for wellness -->
+                  <i class="bi bi-heart-pulse-fill fs-1 text-primary mb-3"></i>
+                  <h4>Digital Wellness</h4>
+                  <p>Maintain your mental and physical health by setting boundaries, taking breaks, and using technology mindfully to enhance your well-being.</p>
+                  <!-- Link button to Info page anchored to wellness section -->
+                  <a href="info.html#wellness" class="btn btn-outline-primary mt-2">Explore Wellness</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Cyber Safety -->
+            <div class="carousel-item">
+              <div class="icon-carousel-box bg-white text-dark rounded-3 shadow-sm p-4 p-lg-5 text-center">
+                <div class="icon-box">
+                  <!-- Icon for safety -->
+                  <i class="bi bi-shield-lock-fill fs-1 text-success mb-3"></i>
+                  <h4>Cyber Safety</h4>
+                  <p>Protect your online life with strong passwords, 2FA, caution against phishing, and smart privacy habits on apps and platforms.</p>
+                  <!-- Link button to Info page anchored to cybersafety section -->
+                  <a href="info.html#cybersafety" class="btn btn-outline-primary mt-2">Explore Safety</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Smart Usage -->
+            <div class="carousel-item">
+              <div class="icon-carousel-box bg-white text-dark rounded-3 shadow-sm p-4 p-lg-5 text-center">
+                <div class="icon-box">
+                  <!-- Icon for smart usage -->
+                  <i class="bi bi-device-ssd-fill fs-1 text-warning mb-3"></i>
+                  <h4>Smart Usage</h4>
+                  <p>Balance your digital life by planning tech-free time, filtering online negativity, and consuming meaningful digital content.</p>
+                  <!-- Link button to Info page anchored to smartusage section -->
+                  <a href="info.html#smartusage" class="btn btn-outline-primary mt-2">Explore Smart Usage</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel controls below the slides -->
+          <div class="text-center mt-4">
+            <!-- Previous slide button -->
+            <button class="btn btn-light me-3" type="button" data-bs-target="#focusCarousel"
+              data-bs-slide="prev" aria-label="Previous">
+              <i class="bi bi-chevron-left"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <!-- Next slide button -->
+            <button class="btn btn-light" type="button" data-bs-target="#focusCarousel"
+              data-bs-slide="next" aria-label="Next">
+              <i class="bi bi-chevron-right"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore More Topics section with tabbed navigation -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Explore More Topics</h2>
+
+      <!-- Tabs Navigation -->
+      <ul class="nav nav-tabs justify-content-center mb-4" id="extraTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <!-- Tab button for Social Media -->
+          <button class="nav-link active" id="socialmedia-tab" data-bs-toggle="tab" data-bs-target="#socialmedia" type="button" role="tab" aria-controls="socialmedia" aria-selected="true">
+            Social Media
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <!-- Tab button for Online Gaming -->
+          <button class="nav-link" id="gaming-tab" data-bs-toggle="tab" data-bs-target="#gaming" type="button" role="tab" aria-controls="gaming" aria-selected="false">
+            Online Gaming
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <!-- Tab button for Privacy Settings -->
+          <button class="nav-link" id="privacy-tab" data-bs-toggle="tab" data-bs-target="#privacy" type="button" role="tab" aria-controls="privacy" aria-selected="false">
+            Privacy Settings
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tabs Content & Border Wrapper -->
+      <div>
+        <div class="tab-content" id="extraTabsContent">
+          <!-- Tab pane for Social Media -->
+          <div class="tab-pane fade show active" id="socialmedia" role="tabpanel" aria-labelledby="socialmedia-tab">
+            <div class="text-center">
+              <h4>Social Media Awareness</h4>
+              <p>
+                Social media can connect us, inspire us, and inform us. However, it can also lead to comparison, anxiety, or misinformation.
+                Learn to curate your feed, manage your time, and critically evaluate content.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab pane for Online Gaming -->
+          <div class="tab-pane fade" id="gaming" role="tabpanel" aria-labelledby="gaming-tab">
+            <div class="text-center">
+              <h4>Healthy Online Gaming</h4>
+              <p>
+                Gaming can be a fun and engaging hobby, but overplaying can lead to neglecting real-life responsibilities.
+                Set time limits, avoid toxic interactions, and explore games that promote problem-solving and creativity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab pane for Privacy Settings -->
+          <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+            <div class="text-center">
+              <h4>Managing Privacy Settings</h4>
+              <p>
+                Every app you use has privacy settings, but do you know how to use them?
+                Regularly review what data you share, limit public access, and be cautious with location-sharing and permissions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Persistent border below tabs content for separation -->
+        <div class="border-bottom mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun Fact section with a styled alert box -->
+  <section class="py-5 bg-white">
+    <div class="container text-center">
+      <h2 class="mb-4">💡 Fun Fact!</h2>
+      <!-- Placeholder for JavaScript to insert a random fun fact -->
+      <div id="funFactBox" class="alert alert-info shadow-sm fw-medium fs-5"></div>
+    </div>
+  </section>
+
+  <!-- Footer with copyright info -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 Digital Life. All rights reserved.
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="js/script.js"></script>
+  <!-- Bootstrap JS bundle with Popper for interactive components -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

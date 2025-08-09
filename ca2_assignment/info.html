@@ -1,0 +1,188 @@
+<!--Declares the document type and version of HTML.-->
+<!DOCTYPE html>
+<!--The 'lang="en"' attribute specifies that the content language is English-->
+<html lang="en">
+
+<head>
+  <!-- Character encoding for the document -->
+  <meta charset="UTF-8">
+  <!-- Viewport settings for responsive design on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title displayed in browser tab -->
+  <title>Digital Wellness & Cyber Safety Info</title>
+  <!-- Bootstrap CSS for layout and styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons library for vector icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom CSS file for additional styling -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation bar at the top -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Brand/logo with icon and site name -->
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-globe2 fs-4 text-primary"></i>
+        <span>Digital Life</span>
+      </a>
+
+      <!-- Hamburger menu button for smaller screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible navigation links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center mb-2 mb-lg-0 d-flex flex-column flex-lg-row gap-lg-3">
+          <li class="nav-item">
+            <!-- Link to Home page -->
+            <a class="nav-link fw-semibold" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- Link to Info page -->
+            <a class="nav-link fw-semibold" href="info.html">Info</a>
+          </li>
+          <li class="nav-item">
+            <!-- Link to Form page -->
+            <a class="nav-link fw-semibold" href="form.html">Form</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header section with page title and subtitle -->
+  <section class="header-section">
+    <div class="container">
+      <h1>Stay Safe and Well in the Digital World</h1>
+      <p>Understand Digital Wellness and Cyber Safety to Take Control of Your Online Life</p>
+    </div>
+  </section>
+
+  <!-- Digital Wellness content section -->
+  <section class="container py-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 id="wellness" class="section-title">What is Digital Wellness?</h2>
+        <p>
+          Digital wellness is about maintaining your mental, emotional, and physical health in relation to how you use technology.
+          It's about being in control of your device use instead of letting it control you. Many people struggle with compulsive phone use, social media addiction, and digital fatigue without realizing it. Recognizing the signs and taking action is the first step toward a healthier digital lifestyle.
+        </p>
+        <h5 class="mt-3">Signs of poor digital wellness include:</h5>
+        <ul>
+          <li>Sleep problems due to late-night scrolling, especially on social media or video platforms</li>
+          <li>Decreased attention span from constant switching between apps and tabs</li>
+          <li>Social isolation despite constant online presence, due to less meaningful in-person interactions</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <!-- Illustrative image for Digital Wellness -->
+        <img src="images/digital_wellness.jpg" alt="Digital Wellness" class="img-fluid rounded shadow-sm w-50">
+      </div>
+    </div>
+  </section>
+
+  <!-- Cyber Safety content section -->
+  <section class="container py-4">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 id="cybersafety" class="section-title">What is Cyber Safety?</h2>
+        <p>
+          Cyber safety involves protecting your devices, identity, and information while navigating the digital world.
+          The internet is filled with threats that can compromise your personal data, privacy, and financial security.
+          Cybercriminals often use deception, such as fake emails and websites, to trick users into giving away information.
+        </p>
+        <h5 class="mt-3">Common online threats include:</h5>
+        <ul>
+          <li>Phishing emails and fake websites that mimic trusted sources to steal personal info</li>
+          <li>Malware and ransomware that infect devices and demand payment to restore access</li>
+          <li>Risks from using unsecured public Wi-Fi networks that expose your data to hackers</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <!-- Illustrative image for Cyber Safety -->
+        <img src="images/cyber_safety.jpg" alt="Cyber Safety" class="img-fluid rounded shadow-sm w-75">
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips accordion section -->
+  <section class="container py-4">
+    <h2 id="smartusage" class="section-title">Tips for a Safer & Healthier Digital Life</h2>
+
+    <div class="accordion" id="digitalTipsAccordion">
+      <!-- Accordion item for device habits -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingDevice">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevice" aria-expanded="true" aria-controls="collapseDevice">
+            Device Habits
+          </button>
+        </h2>
+        <div id="collapseDevice" class="accordion-collapse collapse show" aria-labelledby="headingDevice" data-bs-parent="#digitalTipsAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Enable night mode to reduce eye strain</li>
+              <li>Set screen time limits</li>
+              <li>Take regular breaks from screens to prevent burnout</li>
+              <li>Use app timers to stay in control of your usage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion item for online safety -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSafety">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSafety" aria-expanded="false" aria-controls="collapseSafety">
+            Online Safety
+          </button>
+        </h2>
+        <div id="collapseSafety" class="accordion-collapse collapse" aria-labelledby="headingSafety" data-bs-parent="#digitalTipsAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Always use two-factor authentication (2FA) for important accounts</li>
+              <li>Regularly update your software and apps</li>
+              <li>Never click on suspicious links</li>
+              <li>Do not share personal info with unknown sources</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion item for mental health -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingMental">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMental" aria-expanded="false" aria-controls="collapseMental">
+            Mental Health
+          </button>
+        </h2>
+        <div id="collapseMental" class="accordion-collapse collapse" aria-labelledby="headingMental" data-bs-parent="#digitalTipsAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Avoid doomscrolling by limiting time on news apps and social media</li>
+              <li>Mute or unfollow toxic accounts</li>
+              <li>Spend time on offline hobbies or in nature</li>
+              <li>Use “Do Not Disturb” or focus tools to reduce distractions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with copyright info -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 Digital Life. All rights reserved.
+  </footer>
+
+  <!-- Custom JavaScript file -->
+  <script src="js/script.js"></script>
+  <!-- Bootstrap JS bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
