@@ -1,0 +1,79 @@
+/* General body font style */
+body {
+  font-family: sans-serif;
+}
+
+/* Navbar styles: light blue background, horizontal flex layout with spacing */
+.navbar {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+/* Hero and header-section share common styles:
+   - Centered background image, no repeat, cover entire area
+   - White text color
+   - Padding for vertical and horizontal spacing
+   - Center aligned text */
+.hero,
+.header-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Hero section specific background image */
+.hero {
+  background-image: url("../images/index_background.jpg");
+}
+
+/* Header section specific background image */
+.header-section {
+  background-image: url("../images/info_background.jpg");
+}
+
+/* Hero section main heading styles */
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Hero section paragraph styles */
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Header section main heading styles */
+.header-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Header section paragraph styles */
+.header-section p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Common styles for section headings and titles */
+.section-heading,
+.section-title {
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+/* Unordered list indentation */
+ul {
+  padding-left: 1.2rem;
+}
+
+/* Remove top margin for #cybersafety section */
+#cybersafety {
+  margin-top: 0;
+}
